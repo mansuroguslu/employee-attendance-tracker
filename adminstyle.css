@@ -1,0 +1,292 @@
+/* Allgemeine Stile */
+/**
+ * Employee Attendance Tracker - Mewdev
+ * Author: Mansur Oguslu
+ * Version: 1.0
+ * Website: https://mewdev.com
+ * Datum: 20/07/2023
+ * E-mail: mansur.oguslu@mewdev.com
+ * Twitter: https://twitter.com/mewdevcom
+ * Facebook: https://www.facebook.com/mewdevcom/
+ * GitHub: https://github.com/mansuroguslu
+ * GNU GENERAL PUBLIC LICENSE
+ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f5f5f5;
+}
+
+table td:last-child,
+table th:last-child {
+  border-right: none;
+}
+table tr:hover {
+  background-color: #b3ffbd;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+.navbar .logo img {
+  width: 180px;
+}
+
+.navbar .menu-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .menu-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .menu-links a:hover {
+  color: #ddd;
+}
+
+.navbar .back-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffa7a7;
+  padding: 20px;
+  border-radius: 4px;
+  z-index: 9999;
+  display: none;
+}
+#editModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+#editModal label {
+  font-weight: bold;
+}
+
+#editModal input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#editModal button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#editModal button:hover {
+  background-color: #45a049;
+}
+
+#editModal button + button {
+  margin-left: 10px;
+}
+/* Stil für den "Download Data as Excel"-Button */
+button[data-download] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[data-download]:hover {
+  background-color: #45a049;
+}
+
+/* Stil für den "Edit"-Button */
+button[data-edit] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[data-edit]:hover {
+  background-color: #0056b3;
+}
+
+button[data-show-last-file] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[data-show-last-file]:hover {
+  background-color: #45a049;
+}
+
+#downloadModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+#downloadModal p {
+  margin: 0 0 10px;
+}
+
+#downloadLink {
+  margin-right: 10px;
+}
+
+#downloadModal button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

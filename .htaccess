@@ -1,0 +1,145 @@
+# Employee Attendance Tracker - Mewdev
+
+# Author: Mansur Oguslu
+
+# Version: 1.0
+
+# Website: https://mewdev.com
+
+# Datum: 20/07/2023
+
+# E-mail: mansur.oguslu@mewdev.com
+
+# Twitter: https://twitter.com/mewdevcom
+
+# Facebook: https://www.facebook.com/mewdevcom/
+
+# GitHub: https://github.com/mansuroguslu
+
+# GNU GENERAL PUBLIC LICENSE
+
+# Verbiete den Zugriff auf die .htaccess-Datei
+
+<FilesMatch "^\.ht">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+# Verbiete den direkten Zugriff auf PHP-Dateien
+
+<FilesMatch "\.php$">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
+
+# Erlaube den Zugriff auf die index.php-Datei
+
+<Files "index.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die admin/index.php-Datei
+
+<Files "admin/index.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die login.php-Datei
+
+<Files "login-app.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die login.php-Datei
+
+<Files "login.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die get_last_generated_file.php-Datei
+
+<Files "get_last_generated_file.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die login.php-Datei
+
+<Files "admin/login.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die logout.php-Datei
+
+<Files "logout.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die logout.php-Datei
+
+<Files "success-installation.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die install.php-Datei
+
+<Files "install.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die logout.php-Datei
+
+<Files "logout-app.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die logout.php-Datei
+
+<Files "admin/logout.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die update.php-Datei
+
+<Files "update.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die update.php-Datei
+
+<Files "admin/update.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Verbiete den Zugriff auf die db_connection.php-Datei
+
+<Files "db_connection.php">
+Order Deny,Allow
+Deny from all
+</Files>
+
+# Füge Sicherheitsheader hinzu
+
+<IfModule mod_headers.c>
+    Header always set X-Robots-Tag "noindex, nofollow"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Feature-Policy "geolocation 'self'; camera 'self'"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always append Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'"
+    Header always set Expect-CT "enforce; max-age=3600"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>

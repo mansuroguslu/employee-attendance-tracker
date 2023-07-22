@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "instascan": "^1.0.0",
+    "jsqr": "^1.4.0"
+  }
+}
