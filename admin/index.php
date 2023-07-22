@@ -443,6 +443,7 @@ if (isset($_GET['export']) && $_GET['export'] === 'true') {
                 error: function() {
                     alert('Error fetching last generated file.');
                 }
+
             });
         }
 
