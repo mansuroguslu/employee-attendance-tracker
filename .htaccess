@@ -46,6 +46,20 @@ Order Allow,Deny
 Allow from all
 </Files>
 
+# Erlaube den Zugriff auf die admin/qr-generate.php-Datei
+
+<Files "admin/qr-generate.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
+# Erlaube den Zugriff auf die qr-generate.php-Datei
+
+<Files "qr-generate.php">
+Order Allow,Deny
+Allow from all
+</Files>
+
 # Erlaube den Zugriff auf die login.php-Datei
 
 <Files "login-app.php">

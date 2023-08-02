@@ -267,10 +267,11 @@ if (isset($_GET['export']) && $_GET['export'] === 'true') {
         </div>
         <div class="menu-links">
             <a href="https://mewdev.com/employee-attendance-tracker/" target="_blank">About</a>
-            <a href="https://mewdev.com/#contact" target="_blank">Support</a>
+            <a href="https://mewdev.com/contact" target="_blank">Support</a>
             <a href="https://fr-be.trustpilot.com/review/mewdev.com" target="_blank">Review</a>
         </div>
         <div>
+            <a class="back-button" href="/admin/qr-generate.php">QR CODE GENERATOR</a>
             <a class="back-button" href="/">Back to App</a>
             <a class="back-button" href="logout.php">Logout</a>
         </div>
