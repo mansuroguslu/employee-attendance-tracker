@@ -1,4 +1,5 @@
 # Employee Attendance Tracker
+
 QR Code-based Employee Attendance Tracker
 
 ## Description
@@ -42,3 +43,9 @@ If you encounter any issues while using the Employee Attendance Tracker, please 
 This project is developed and maintained by [Mansur Oguslu](https://github.com/mansuroguslu).
 
 ---
+
+## UPDATE:
+
+02/08/2023: V0.1.1 - New function QR CODE Generator in Admin Area
+
+![GIF](https://i0.wp.com/mewdev.com/storage/2023/08/ezgif-2-b880a03f67.gif?resize=600%2C300&ssl=1)
