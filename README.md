@@ -6,7 +6,7 @@ QR Code-based Employee Attendance Tracker
 
 Employee Attendance Tracker is an open-source web application developed using PHP and JavaScript. The project aims to provide a simple yet efficient solution for managing employee attendance in a workplace setting. Employees can check in and out of work by scanning their unique QR codes, while supervisors have access to a dashboard to monitor and manage attendance records.
 
-For more detailed documentation, please visit the [Employee Attendance Tracker Documentation](https://mewdev.com/employee-attendance-tracker/).
+For more detailed documentation, please visit the [Employee Attendance Tracker Documentation](https://oguslu.com/blog/oss-employee-attendance-tracker-0).
 
 ## Key Features
 
@@ -20,7 +20,7 @@ For more detailed documentation, please visit the [Employee Attendance Tracker D
 
 ## Installation and Usage
 
-Please refer to the [Employee Attendance Tracker Documentation](https://mewdev.com/employee-attendance-tracker/) for detailed installation instructions and usage guidelines.
+Please refer to the [Employee Attendance Tracker Documentation](https://oguslu.com/blog/oss-employee-attendance-tracker-0) for detailed installation instructions and usage guidelines.
 
 ## How to Use the Employee Attendance Tracker
 
@@ -48,4 +48,4 @@ This project is developed and maintained by [Mansur Oguslu](https://github.com/m
 
 02/08/2023: V0.1.1 - New function QR CODE Generator in Admin Area
 
-![GIF](https://i0.wp.com/mewdev.com/storage/2023/08/ezgif-2-b880a03f67.gif?resize=600%2C300&ssl=1)
+![GIF](https://oguslu.com/blog/bl-content/uploads/pages/autosave-f774ae5798bad6511cc2ac4f025cef7b/ezgif-2-b880a03f67.webp)
